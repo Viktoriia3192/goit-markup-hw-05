@@ -121,6 +121,8 @@ p {
     color: inherit;
     padding: 24px 0;
     position: relative;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -138,6 +140,8 @@ p {
     height: 4px;
     left: 0px;
     border-radius: 2px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link.current::after,
@@ -169,6 +173,9 @@ p {
     color: inherit;
     align-items: center;
     padding: 24px 0;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .adress-link:hover,
 .adress-link:focus {
@@ -228,6 +235,8 @@ p {
         margin-right: auto;
         padding: 16px 32px;
         border: none;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .hero-button:hover,
@@ -245,11 +254,10 @@ p {
     z-index: 100;
     transition: opacity 200ms ease, visibility 200ms ease;
 }
-.bsckdrop.is-hidden {
+.backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition-delay: 400 ms;
 }
 .modal {
     position: absolute;
@@ -272,7 +280,9 @@ p {
     opacity: 0;
     }
 .modal-button {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     width: 24px;
     height: 24px;
@@ -281,10 +291,15 @@ p {
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }    
-.modal-icon {
-    width: 8px;
-    height: 8px;
+.modal-button:hover,
+.modal-button:focus {
+    background-color: var(--ocean);
+    fill: var(--white);
 }
+.modal-icon {
+    fill: var(--navy-blue);
+}
+
 /* feature */
 
 .feature {
@@ -311,7 +326,6 @@ p {
     border-radius: 4px;
     margin-bottom: 8px;
     width: 264px;
-    justify-content: center;
 }
 
 .feature-undertitle {
@@ -422,6 +436,8 @@ p {
     height: 100%;
     background-color: var(--iris);
     border-radius: 50%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -467,6 +483,8 @@ p {
     color: #afb1b8;  
     height: 100%;
     width: 100%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link:hover,
 .customers-link:focus {
@@ -511,6 +529,8 @@ p {
     height: 40px;
     background-color: var(--iris);
     border-radius: 50%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-list-link:hover,
 .footer-social-list-link:focus {
@@ -569,6 +589,8 @@ p {
         letter-spacing: 0.04em;
         padding: 12px 24px;
         min-height: 48px;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters-button:hover,
 .filters-button:focus {
@@ -594,11 +616,15 @@ p {
 .rows-item {
     width: calc((100% - 48px) / 3);
 }
-.team-item:hover .overlay {
+.rows-item:hover .overlay {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(0);
 }
 .rows-link {
     display: block;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
