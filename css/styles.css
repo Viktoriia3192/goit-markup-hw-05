@@ -293,11 +293,11 @@ p {
 }    
 .modal-button:hover,
 .modal-button:focus {
-    background-color: var(--ocean);
     fill: var(--white);
+    background-color: var(--ocean);
+    color: var(--white);
 }
 .modal-icon {
-    fill: var(--navy-blue);
 }
 
 /* feature */
@@ -489,7 +489,7 @@ p {
 .customers-link:hover,
 .customers-link:focus {
     border-color: var(--ocean);
-    color: #404bbf;
+    color: var(--ocean);
 }
 .customers-svg {
     fill: currentColor;
