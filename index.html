@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -28,7 +29,7 @@
 
           <ul class="header-list list">
             <li class="header-item">
-              <a class="link header-link" href="./index.html">Studio</a>
+              <a class="link header-link current" href="./index.html">Studio</a>
             </li>
             <li class="header-item">
               <a class="link header-link" href="./portfolio.html">Portfolio</a>
@@ -59,7 +60,17 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-uppertitle">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>Order Service</button>
+        </div>
+        <!-- Modal window -->
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="modal-button" type="button" data-modal-close>
+              <svg class="modal-icon" width="8" height="8">
+                <use href="./css/styles.css#icon-close-black"></use>
+              </svg>
+            </button>
+          </div> 
         </div>
       </section>
       <!-- Feature section -->
@@ -433,5 +444,10 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/modal.js">
+
+    </script>
   </body>
 </html>
