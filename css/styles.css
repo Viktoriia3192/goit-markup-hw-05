@@ -560,6 +560,9 @@ p {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
+/* Portfolio */
+
 /* filters */
 .filters {
     padding-bottom: 120px;
@@ -595,7 +598,7 @@ p {
         min-height: 48px;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-property: backgroun-color;
+        transition-property: backgroun-colorcolor, border-color, box-shadow;
 }
 .filters-button:hover,
 .filters-button:focus {
@@ -621,7 +624,8 @@ p {
 .rows-item {
     width: calc((100% - 48px) / 3);
 }
-.rows-item:hover .overlay {
+.rows-item:hover .overlay 
+.rows-item:focus .overlay {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(0);
